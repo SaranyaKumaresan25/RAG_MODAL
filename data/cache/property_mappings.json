@@ -1,0 +1,875 @@
+{
+  "51fdd74c1ec9d59c2cf4ae5d6bdabb62": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcColumn",
+      "IfcBeam",
+      "IfcSlab",
+      "IfcFooting"
+    ],
+    "measured_dimension": "wind velocity",
+    "why_required": "This threshold exists to ensure the structural integrity of buildings in cyclone-prone areas, preventing damage and potential loss of life.",
+    "confidence": 0.9,
+    "reasoning": "The clause specifies cyclone-prone areas based on wind velocity, which is a critical factor in structural design. Given the types of elements that would be affected by wind loads, the threshold applies to walls, columns, beams, slabs, and footings."
+  },
+  "8fd244fbcaf7bf9b0b794a2916f03325": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "This threshold exists to ensure that building elements provide adequate clearance for occupants and emergency responders.",
+    "confidence": 0.9,
+    "reasoning": "The threshold value of 2.0 m is likely related to a physical property of building elements, and the known L2 properties list includes Length_mm, which is a plausible candidate. The L1 entity types that this clause applies to are likely those that have a significant impact on clear height, such as beams, columns, slabs, walls, and footings."
+  },
+  "86346631f4d807d2926e27bf5c79e892": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall",
+      "IfcCovering",
+      "IfcOpeningElement"
+    ],
+    "measured_dimension": "dwelling unit plinth area",
+    "why_required": "To ensure accessibility and safety for residents in Economically Weaker Section residential projects.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a threshold for dwelling unit size in plinth area, which is a characteristic of building elements like slabs, walls, coverings, and openings. Although the exact property name 'Area_m2' is not in the known list, it can be inferred from the given properties like Length_mm, Width_mm, and Depth_mm. The threshold value of 40.0 sq.m is likely intended to ensure that dwelling units are not too small for residents, promoting accessibility and safety."
+  },
+  "dcd9ee7ff6ea98c91f73799f8c78df65": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding",
+      "IfcSite"
+    ],
+    "measured_dimension": "minimum dimension of a plan",
+    "why_required": "To ensure that the plan is readable and can be used for planning and building permit purposes.",
+    "confidence": 0.8,
+    "reasoning": "The clause regulates the physical property of the minimum dimension of a plan, which is not directly related to any of the known L2 product properties. The L1 entity types are IfcBuilding and IfcSite, as they are the primary entities that would have plans associated with them. The measured dimension is the minimum dimension of the plan, and the threshold exists to ensure that the plan is readable and can be used for planning and building permit purposes."
+  },
+  "f49a33090281cea72510cecd7b6f954c": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding",
+      "IfcSite"
+    ],
+    "measured_dimension": "distance to adjacent buildings",
+    "why_required": "This threshold exists to ensure safe separation between buildings and to comply with local zoning regulations.",
+    "confidence": 0.8,
+    "reasoning": "The clause mentions 'adjacent street, buildings' and 'distance of 15m', which suggests a spatial relationship between the building and its surroundings. Given the context, it's likely related to building separation rather than a physical property of the building itself."
+  },
+  "b9892541ac987f67ba668cff0c142115": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding",
+      "IfcSite"
+    ],
+    "measured_dimension": "distance to nearest street",
+    "why_required": "This threshold exists to ensure safe and accessible means of access to the building, including emergency access.",
+    "confidence": 0.9,
+    "reasoning": "The clause mentions the nearest existing street, which implies a spatial relationship between the building site and the street. This is a characteristic of the building site, which is represented by IfcSite in IFC. The distance to the nearest street is a measured dimension that affects the accessibility of the building."
+  },
+  "943317092a62a7d52ac83a1ad0804902": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcOpeningElement",
+      "IfcBuildingElementProxy"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure that the building's height does not obstruct power lines or other overhead infrastructure, and to maintain a safe distance for maintenance and emergency access.",
+    "confidence": 0.8,
+    "reasoning": "The regulation mentions the need for a plan with a scale of not less than 1:500, which implies a requirement for clear height to accommodate the infrastructure. Given the context, it's likely that the threshold value of 10.0 m is related to the height of the building or its components, which would be applicable to walls, openings, and building elements in general."
+  },
+  "d9346248b46094cbd02deddbbed31b8a": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "This threshold exists to ensure that buildings do not pose a risk to occupants and emergency responders in case of an emergency, and to comply with building codes and regulations.",
+    "confidence": 0.9,
+    "reasoning": "The clause specifies height limits for different types of buildings, which suggests that the threshold value is related to the physical dimensions of the building. The only L2 property that is related to physical dimensions is Length_mm, which is a reasonable choice given the context. The L1 entity types listed are all structural elements that would be affected by the height of the building."
+  },
+  "48663004a49c8a70d77293f63c12f3aa": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcWall",
+      "IfcCovering",
+      "IfcOpeningElement"
+    ],
+    "measured_dimension": "width within one's land",
+    "why_required": "To prevent overhanging structures from obstructing public streets and maintaining property boundaries.",
+    "confidence": 0.9,
+    "reasoning": "The threshold value of 75.0 cm is likely related to a physical dimension of the structure. Given the context of the regulation, it is most likely related to the width of a sunshade or parapet. The L2 property Length_mm is the most relevant property from the known list, as it is a physical dimension. The L1 entity types are those that could potentially have a width dimension, such as beams, columns, walls, coverings, and opening elements."
+  },
+  "91e459fbca810d94a1c57f38bf79b105": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcCovering",
+      "IfcOpeningElement",
+      "IfcWall"
+    ],
+    "measured_dimension": "board size",
+    "why_required": "To ensure that the development details are displayed prominently and are easily readable from a distance, as per the planning permission regulations.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies a minimum size for the board displaying development details, which implies a physical dimension. The given threshold value is in centimeters, which is a common unit for measuring lengths. The L2 property Length_mm is the closest match from the known list, considering the unit conversion (1 cm = 10 mm). The L1 entity types are chosen based on the context of the regulation clause, which mentions a board to be displayed on a site, likely related to signage or information boards."
+  },
+  "255c7942bb921314d4b038d1e022361e": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcColumn",
+      "IfcBeam",
+      "IfcFooting"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To ensure safe access and visibility for emergency vehicles and pedestrians.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies a minimum road width of 18m for commercial use zones, which implies a requirement for a minimum physical dimension of the road or adjacent structures. The L2 property Length_mm is the most relevant property from the known list, and it is likely that the regulation is intended to apply to elements that have a significant impact on the road width, such as walls, columns, beams, and footings."
+  },
+  "cc0ca147739b9871f6ab2617edeebbd0": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "distance to water source",
+    "why_required": "To prevent contamination of water sources and ensure safe drainage of buildings.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a distance threshold for buildings near water sources, which is a common requirement for environmental and health safety. Although the clause does not directly reference a specific IFC property, it is likely related to the overall building's location and proximity to water sources."
+  },
+  "31ec91caf12f19cf8006038c91958f3c": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcWall",
+      "IfcCovering",
+      "IfcOpeningElement"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "This threshold exists to ensure that sun-shades do not obstruct the view or create a hazard in setback spaces.",
+    "confidence": 0.8,
+    "reasoning": "The threshold value of 0.6m is related to the physical dimension of a structure, specifically its height. Given the context of sun-shades in setback spaces, it is likely related to the height of the structure. The L2 property Length_mm is the most relevant property from the known list, as it represents a physical dimension. The L1 entity types are those that can have a height, such as beams, columns, walls, coverings, and opening elements."
+  },
+  "8ae80521a8c7cd299813f2804dfd8935": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcColumn",
+      "IfcBeam",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To prevent accidental falls and ensure safe access to elevated areas.",
+    "confidence": 0.8,
+    "reasoning": "The clause regulates the height of elevated features above the floor, which is a common safety concern. The specified threshold value of 1.5m is likely intended to prevent accidental falls and ensure safe access to these areas. The regulated entities are likely to be structural elements such as columns, beams, and walls, as well as footings that support elevated tanks."
+  },
+  "7cf44ae7c860f4ca17086ec4272d04b6": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding",
+      "IfcSite"
+    ],
+    "measured_dimension": "distance from Metro Rail Corridor",
+    "why_required": "To prevent over-development and ensure safety in areas surrounding Metro Rail Corridors.",
+    "confidence": 0.8,
+    "reasoning": "The regulation applies to areas around Metro Rail Corridors, which suggests a spatial relationship between the building and the corridor. Given the known L1 element types, IfcBuilding and IfcSite are the most likely candidates to be involved in such a spatial relationship. The measured dimension is distance, which is not explicitly listed in the known L2 properties, but can be inferred from the context of the regulation."
+  },
+  "720a3f2b24482bfabe79e521cdebf891": {
+    "l2_property": null,
+    "l1_entity_types": [],
+    "measured_dimension": "Floor Space Index area",
+    "why_required": "To ensure that developments provide housing for lower income groups and adhere to the Tamil Nadu Town and Country Planning Act, 1971.",
+    "confidence": 1.0,
+    "reasoning": "The regulation clause specifies a threshold value for Floor Space Index area, which is not a known L2 property. It applies to all developments, but no specific IFC element types are mentioned. The measured dimension is Floor Space Index area, and the threshold exists to ensure code compliance and provide housing for lower income groups."
+  },
+  "3d5d2d5499e2aeac9b4a45ff5a4704eb": {
+    "l2_property": "Unit_Cost_INR",
+    "l1_entity_types": [
+      "IfcBuildingElementProxy"
+    ],
+    "measured_dimension": "cost",
+    "why_required": "This threshold exists to ensure that the cost of building elements is within a reasonable range, likely for budgeting and financial planning purposes.",
+    "confidence": 0.8,
+    "reasoning": "The clause mentions 'shelter charges' and 'Guide Line Valve [GLV]' which is likely related to building costs. The threshold of 1% suggests a proportional relationship with the cost of the building element. The L2 property Unit_Cost_INR is the most likely candidate to store this information. The L1 entity types are assumed to be the building elements that incur these costs."
+  },
+  "6b2ab542b91c1df54fa27d793f1e8a4c": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "Building Height",
+    "why_required": "To ensure that buildings do not exceed a certain height for structural integrity and safety.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates building height, which is not explicitly listed as a property in the known L2 product list. However, building height is a characteristic of an IfcBuilding, which is a type of L1 entity. The threshold value of 18.3m is likely intended to prevent buildings from becoming too tall, which could compromise structural integrity and pose a safety risk."
+  },
+  "5e3ab3a95e0d243213f260492fb58429": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear width",
+    "why_required": "To ensure safe and accessible vehicular access within the site, preventing accidents and ensuring compliance with building regulations.",
+    "confidence": 0.9,
+    "reasoning": "The clause specifies a clear width of 7.2 m for internal vehicular access ways, which is a physical property that can be measured in the model. This property is relevant to walls, beams, columns, slabs, and footings, as they can affect the clear width of the access way. The threshold value exists to ensure safety and accessibility, as per building regulations."
+  },
+  "5a60edc5bd5d7d8aa5a2794733cfffff": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "floor area",
+    "why_required": "To ensure safe and accessible electrical infrastructure for buildings exceeding a certain size.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a threshold for floor area, which is a characteristic of the building itself, not a specific element or product. It applies to all elements within the building, making IfcBuilding a suitable choice. The threshold value exists to ensure that buildings of a certain size have adequate electrical infrastructure, which is a safety and accessibility concern."
+  },
+  "e54106f753c390ab9da690dc8654d75a": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcColumn",
+      "IfcBeam",
+      "IfcSlab",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clearance from property boundary or street alignment",
+    "why_required": "To ensure safe and accessible vehicular movement around the building, preventing potential hazards and ensuring compliance with local building regulations.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies a minimum clearance for vehicular ramps in setback spaces, which implies a requirement for a certain distance between the building and the property boundary or street alignment. This is a physical property that can be measured in meters, and is relevant to various building elements such as walls, columns, beams, slabs, and footings."
+  },
+  "320d06f28fda66dd756418e43a207bc3": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "floor area",
+    "why_required": "To ensure adequate sewage disposal facilities are provided for the building, as per local regulations.",
+    "confidence": 0.8,
+    "reasoning": "The clause applies to the building as a whole, rather than a specific element. The threshold value of 2500 sq.m. is likely related to the building's floor area, which is not explicitly listed in the known L2 properties. However, it can be inferred that the clause is concerned with the overall size of the building, which is a characteristic of the building entity type."
+  },
+  "cc5878507ffc35643d25aa0459d3ec13": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn"
+    ],
+    "measured_dimension": "clear height above ground level",
+    "why_required": "To ensure sufficient headroom for occupants and to prevent accidents.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates the height of basement floors, which is a physical property that can be measured in millimeters. This property is relevant to IfcSlab, IfcWall, IfcBeam, and IfcColumn element types. The threshold value of 1.2 meters is equivalent to 1200 millimeters, which matches the property type. The reason for this threshold is to ensure safety and prevent accidents by providing sufficient headroom for occupants."
+  },
+  "b6077b8f5108eb8f8665be5104cf7801": {
+    "l2_property": "Unit_Cost_INR",
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn",
+      "IfcFooting"
+    ],
+    "measured_dimension": "floor area cost",
+    "why_required": "This threshold exists to ensure developers have sufficient funds for infrastructure and amenity charges, as per the regulation.",
+    "confidence": 0.8,
+    "reasoning": "The clause mentions 'per square metre of floor area' which implies a cost per unit area. This is most closely related to the Unit_Cost_INR property. The L1 entity types are chosen based on their relevance to floor area, such as slabs, walls, beams, columns, and footings."
+  },
+  "21d460c8e02ce4cf3cc495d5f85d0525": {
+    "l2_property": null,
+    "l1_entity_types": [],
+    "measured_dimension": "road width",
+    "why_required": "This threshold exists to ensure safe and accessible passage for vehicles and pedestrians, and to comply with local building regulations.",
+    "confidence": 1.0,
+    "reasoning": "The regulation clause specifies a minimum road width, which is a physical property that does not directly relate to any of the known L2 product properties. The clause applies to the site as a whole, rather than a specific building element, so it does not directly relate to any of the known L1 element types. The measured dimension is 'road width', which is a physical property that is relevant to the regulation. The reason for the threshold is to ensure safe and accessible passage for vehicles and pedestrians, and to comply with local building regulations."
+  },
+  "08ec7d0a409ce8cd240e1fa8353c88c4": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcSite"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To ensure safe and accessible movement of vehicles and pedestrians around the building site.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies site-related parameters, and the threshold value of 12.0m is mentioned as a minimum road width, which is a characteristic of the site. This suggests that the regulation applies to the IfcSite entity type."
+  },
+  "8a072af91a2bd3ac891e8cb43ce95a1d": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To ensure safe access and emergency services to high-rise buildings, the road width must be sufficient to accommodate vehicles and pedestrians.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies a threshold value for road width in relation to high-rise buildings, which suggests that the building itself is the relevant entity type. The clause does not mention any specific IFC properties, but the context implies that the building's location and accessibility are being regulated."
+  },
+  "3a22641d0e0474f3298b209e648799d2": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcColumn",
+      "IfcBeam",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure safe passage and accessibility for maintenance personnel and emergency services.",
+    "confidence": 0.8,
+    "reasoning": "The clause specifies a minimum headroom clearance for gate pillars, which is a common requirement for building codes to ensure safety and accessibility. The threshold value of 5.50m is likely chosen to accommodate typical human height and movement."
+  },
+  "92c91c3d46e7f43215d265ac39bbeac9": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear width",
+    "why_required": "To ensure safe vehicular access within the site, preventing accidents and ensuring compliance with building regulations.",
+    "confidence": 0.9,
+    "reasoning": "The clause specifies a clear width of 7.2m for vehicular access ways, which is a physical dimension that can be represented by the Length_mm property. This property is applicable to various building elements that have a length, such as beams, columns, slabs, walls, and footings. The threshold value exists to ensure safe vehicular access within the site, preventing accidents and ensuring compliance with building regulations."
+  },
+  "24d4031a204c8a4afa92a2018fa8a383": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcSlab"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure sufficient headroom for occupants and to prevent accidents.",
+    "confidence": 0.8,
+    "reasoning": "The clause specifically mentions 'height of basement floor' and 'headroom', which suggests a relationship with the physical properties of the slab. Given the context, it's likely that the threshold value of 1.2m is related to the clear height of the slab, which is a critical factor in determining headroom."
+  },
+  "f1cb8ac7c08fb20d6c28040d24a800e2": {
+    "l2_property": "Depth_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "This threshold exists to ensure that structural elements can accommodate the required building services and occupants, and to prevent accidents due to low ceilings.",
+    "confidence": 0.9,
+    "reasoning": "The clause mentions 'at least one metre roof', which implies a minimum clear height requirement. Given the context of building services and structural sufficiency, the most relevant L2 property is Depth_mm, which is a measure of height. The L1 entity types are structural elements that would typically have a depth dimension. The measured dimension is clear height, which is a safety requirement to prevent accidents and ensure structural sufficiency."
+  },
+  "6f5922a5b7edc2ba25b0939a54fd2df7": {
+    "l2_property": "Unit_Cost_INR",
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn",
+      "IfcFooting"
+    ],
+    "measured_dimension": "cost per square meter",
+    "why_required": "To ensure that the applicant has sufficient funds to cover infrastructure and amenity charges, and to prevent non-payment of charges.",
+    "confidence": 0.8,
+    "reasoning": "The clause mentions 'per square metres of floor area' which implies a cost per unit area, and 'Unit_Cost_INR' is the only property that matches this description. The clause applies to all elements that have a floor area, which includes slabs, walls, beams, columns, and footings."
+  },
+  "45c9a1f7e00c6db4fdd93762a538efaf": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "floor area",
+    "why_required": "To ensure adequate sewage disposal facilities are provided for the building, as per local regulations.",
+    "confidence": 0.8,
+    "reasoning": "The clause applies to buildings with a floor area exceeding 2500 sq.m., which suggests a relationship with the building's physical characteristics. Since the known L2 properties do not include floor area, we infer that the regulation is related to the building as a whole, rather than a specific element. Therefore, we associate it with the IfcBuilding entity type."
+  },
+  "c628388abfdfac08ade49d473b9d80dc": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn",
+      "IfcFooting"
+    ],
+    "measured_dimension": "dwelling unit size",
+    "why_required": "To ensure that affordable housing projects meet minimum size requirements for habitability and safety.",
+    "confidence": 0.9,
+    "reasoning": "The threshold value of 40.0 sq.m is likely related to a physical property of the building, specifically its size. Given the context of affordable housing, it's reasonable to assume that the property in question is related to the size of dwelling units. The L2 property 'Length_mm' is the most likely candidate, as it can be used to calculate the area of a room or dwelling unit. The L1 entity types listed are those that are most likely to have a size or area associated with them. The measured dimension is 'dwelling unit size', which is a reasonable interpretation of the threshold value. The reason for this threshold is to ensure that affordable housing projects meet minimum size requirements for habitability and safety."
+  },
+  "57c2f12766089209a8ab7a47848ddbbc": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding",
+      "IfcSpace"
+    ],
+    "measured_dimension": "floor area proportion",
+    "why_required": "To prevent non-permitted activities from dominating the building's use, ensuring compliance with zoning regulations.",
+    "confidence": 0.8,
+    "reasoning": "The clause regulates the proportion of floor area used for incidental activities, which is not directly related to any physical property of building elements. It applies to IfcBuilding and IfcSpace entities, which represent the overall building and its spaces. The threshold value exists to ensure that non-permitted activities do not exceed a certain proportion of the building's floor area, maintaining compliance with zoning regulations."
+  },
+  "38868809ed5312fb50dd7089670a666c": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding",
+      "IfcSite"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To ensure safe and accessible passage for vehicles and pedestrians, and to comply with local building regulations.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies a minimum road width, which is not a physical property of a building element. It applies to the building or site as a whole, making IfcBuilding and IfcSite the relevant entity types."
+  },
+  "eb8358b1cd8b39e5e07c7221ac6d7cbf": {
+    "l2_property": null,
+    "l1_entity_types": [],
+    "measured_dimension": "percentage of land value",
+    "why_required": "To ensure the applicant has a financial stake in the project's completion and to provide a mechanism for recovering costs in case of non-compliance.",
+    "confidence": 0.8,
+    "reasoning": "This regulation does not directly relate to any physical property of a building element, but rather to a financial aspect of the project. It is likely related to the project's overall value, rather than a specific building element."
+  },
+  "0c1230c44d8b2d240f1bbe3042ac60f1": {
+    "l2_property": null,
+    "l1_entity_types": [],
+    "measured_dimension": "road width",
+    "why_required": "To ensure accessibility and visibility of the reserved area, a minimum width of 10 meters is required.",
+    "confidence": 0.8,
+    "reasoning": "The regulation specifies a minimum width of 10 meters for the reserved area, which is likely related to road width, given the context of the regulation."
+  },
+  "0e174422459bca044655c11968005037": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcCovering",
+      "IfcOpeningElement"
+    ],
+    "measured_dimension": "clear width",
+    "why_required": "To ensure safe passage and accessibility for occupants, particularly for differently abled individuals.",
+    "confidence": 0.9,
+    "reasoning": "The regulation specifies minimum widths for corridors and verandahs in various building types, indicating a concern for accessibility and safety. The threshold value of 1.0 m is likely intended to provide a minimum clear width for passage, which is a common requirement in building codes."
+  },
+  "6f2fe0079448468e6467005fb835f4d2": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "floor area",
+    "why_required": "To ensure adequate space for occupants and to prevent overcrowding, which can be a safety hazard.",
+    "confidence": 0.8,
+    "reasoning": "The clause applies to specific building types and sizes, suggesting it's related to building capacity and space requirements. The threshold value of 150 sq.m is likely related to floor area, which is a common metric for building size."
+  },
+  "586a05b644ab07a64f58b78f7e7c6a21": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding",
+      "IfcSpace"
+    ],
+    "measured_dimension": "floor area",
+    "why_required": "To ensure that buildings have sufficient space for solar panels to generate electricity, as per Tamil Nadu Energy Regulatory Commission guidelines.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause mentions 'terrace area' and 'commercial building area', which suggests a relationship with the overall building or space area. The threshold value of 300 sq.m is likely related to the minimum area required for solar panels, which is a common requirement for building codes and regulations."
+  },
+  "d330acc94b1a68c00eabe6c29b642c34": {
+    "l2_property": null,
+    "l1_entity_types": [],
+    "measured_dimension": "land size",
+    "why_required": "To ensure sufficient space for safe and efficient operation of Wind Electricity Generators, and to comply with zoning regulations.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies land size requirements, which is not directly related to any known L2 product properties. The clause applies to the development of Wind Electricity Generators, which is not an IFC element type. However, the clause does specify requirements for land use, which may be related to the placement of IFC elements such as IfcBuilding or IfcSite."
+  },
+  "381aacfc7ea4f559d42a36ab64ab67c3": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To ensure safe and accessible approach to the electrical room, preventing accidents and ensuring compliance with building codes.",
+    "confidence": 0.9,
+    "reasoning": "The clause specifies a fire-resisting wall with a fire resistance of not less than 4 hours, which implies a specific type of wall. The width of the approach road is also specified, which is a characteristic of a wall. Therefore, it is likely that this clause applies to IfcWall, and the measured dimension is the road width."
+  },
+  "c6254ee007bd43a6872be07e03b314dd": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcCovering",
+      "IfcWall",
+      "IfcDoor",
+      "IfcWindow"
+    ],
+    "measured_dimension": "fire resistance",
+    "why_required": "This threshold exists to prevent the spread of fire in case of an emergency, ensuring the safety of occupants and firefighters.",
+    "confidence": 0.8,
+    "reasoning": "The clause specifies requirements for fireproof rooms and walls, indicating a focus on fire resistance. The threshold value of 2000 litres is likely related to the amount of oil that can be safely contained in a sub-station or switch station. Given the context, it's reasonable to infer that the clause applies to elements that can provide fire resistance, such as coverings, walls, doors, and windows."
+  },
+  "0826a0617ef5e20d8c3e0c3729e6402b": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcFooting"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To ensure safe and accessible passage for pedestrians and vehicles, and to comply with local building regulations.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies minimum road widths for different types of developments, which implies a need to control the physical dimensions of the road. The given threshold value of 7.2m is consistent with this interpretation. The L2 property Length_mm is the most relevant property from the known list, as it represents a physical dimension. The L1 entity types listed are those that are likely to be involved in defining road widths, such as walls, beams, columns, slabs, and footings."
+  },
+  "79c534e912faaa215bb5c539d2687220": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcCovering",
+      "IfcOpeningElement"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To ensure safe separation of main road and service road, preventing accidents and ensuring accessibility.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a minimum width of 7m for a service road, which is a physical property that can be represented by the Length_mm property in the L2 product field. This property is applicable to various IFC element types such as IfcWall, IfcCovering, and IfcOpeningElement, which can be used to model road infrastructure. The measured dimension is road width, and the threshold exists to ensure safe separation of main road and service road, preventing accidents and ensuring accessibility."
+  },
+  "ebf601f88f7682a085b2a170bd1eb7e4": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcOpeningElement"
+    ],
+    "measured_dimension": "passage width",
+    "why_required": "To ensure safe and accessible passage for residents, especially in Economically Weaker Section areas.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies passage width in Economically Weaker Section areas, which is a common requirement for building codes. The threshold value of 1.0m is likely intended to ensure a minimum width for safe passage, and the clause applies to walls and openings that form the passage."
+  },
+  "aadbb6e7d78f07dcc90893dd2b130a7f": {
+    "l2_property": null,
+    "l1_entity_types": [],
+    "measured_dimension": "plot area",
+    "why_required": "To ensure adequate space for building and accessibility, as per building regulations.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a minimum plot area, which is not a property of any known L2 product. It applies to the building as a whole, not to individual elements. Therefore, it does not directly relate to any L1 entity types. The measured dimension is plot area, which is a common requirement in building regulations for safety and accessibility reasons."
+  },
+  "ab17308a3d49ec8667b5ada784d4f4d7": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcFooting"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "This threshold exists to ensure safe and accessible passage for vehicles and pedestrians, preventing accidents and injuries.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause mentions 'width of the road', which is a physical property that can be measured in meters. The known L2 properties include Length_mm, which is a measure of length in millimeters. Assuming a conversion factor of 1000 mm/m, the threshold value of 9.0 m is equivalent to 9000 mm. This property is applicable to various L1 element types, including IfcWall, IfcBeam, IfcColumn, IfcSlab, and IfcFooting, which are all structural elements that can have a width. The threshold value is likely required for safety and accessibility reasons, to prevent accidents and injuries."
+  },
+  "014130d2c452e4d496582cbf38183b2f": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcDoor",
+      "IfcWindow",
+      "IfcFooting",
+      "IfcCovering",
+      "IfcOpeningElement",
+      "IfcSanitaryTerminal",
+      "IfcLightFixture",
+      "IfcBuildingElementProxy"
+    ],
+    "measured_dimension": "passage length",
+    "why_required": "To ensure safe and private access to individual plots, passage length should not exceed 5.0 meters.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates the length of passages in buildings, which is a common requirement for safety and access. The threshold value of 5.0 meters is likely intended to prevent overcrowding and ensure that passages remain private."
+  },
+  "cd8889dab136e5481fb2f0f6cabcec77": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcDoor",
+      "IfcWindow",
+      "IfcFooting",
+      "IfcCovering",
+      "IfcOpeningElement",
+      "IfcSanitaryTerminal",
+      "IfcLightFixture",
+      "IfcBuildingElementProxy"
+    ],
+    "measured_dimension": "passage length",
+    "why_required": "To ensure safe and accessible passage for occupants and emergency services, and to comply with building codes and regulations.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates the length of passages in buildings, which is a critical factor in ensuring safety and accessibility. The threshold value of 7.2m is likely intended to prevent narrow passages that could impede movement. The property Length_mm is the most relevant L2 property, as it directly relates to the physical dimension of the passage. The clause applies to all types of building elements, as they all may be part of a passage."
+  },
+  "29fb8d995ac2ae089d211cb7ea51e705": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcSlab",
+      "IfcBeam",
+      "IfcColumn",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure adequate linkages and proper circulation patterns for public access, considering local conditions.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates the height of a building element to ensure public access, which is a common requirement in building regulations. The threshold value of 12.0m is likely related to the minimum height required for public access, and the operator '> ' suggests that the element must be higher than this threshold. The L1 entity types listed are likely to be affected by this regulation, as they are common building elements that could impact public access."
+  },
+  "fd47bebce2041e63ab51c9047c1a96f3": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcCovering",
+      "IfcOpeningElement",
+      "IfcWall"
+    ],
+    "measured_dimension": "cul-de-sac length",
+    "why_required": "To ensure safe navigation and turning of vehicles, preventing accidents and damage to property.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a maximum length for cul-de-sacs, which is a physical property that can be measured in meters. The L2 property Length_mm is the closest match from the known list, as it represents a length measurement. The L1 entity types IfcCovering, IfcOpeningElement, and IfcWall are likely to be involved in the creation of cul-de-sacs. The measured dimension is the length of the cul-de-sac, and the threshold value exists to ensure safe navigation and turning of vehicles."
+  },
+  "8cdba09ceb5c025762425cfadbddc663": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcColumn",
+      "IfcBeam",
+      "IfcFooting"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To ensure safe passage and accessibility at street intersections.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies minimum splay dimensions based on road width, which is a physical property that can be represented by the Length_mm property in the IFC model. The clause applies to various building elements such as walls, columns, beams, and footings, which are all relevant to the structural integrity and accessibility of the building. The threshold value of 9.0m is likely intended to ensure that pedestrians have sufficient space to navigate safely at street intersections."
+  },
+  "1cdcdfbff5403c1b7e489cc4c5914aa6": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuildingElementProxy"
+    ],
+    "measured_dimension": "minimum dimension of reserved land",
+    "why_required": "To ensure that reserved land for community recreational purposes is accessible and usable, and to prevent fragmentation of land.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a minimum dimension of 10 metres for reserved land, which suggests that it is related to the physical properties of the land rather than a specific building element. The mention of 'ground level' and 'shape and location' suggests that it is related to the building or site as a whole, rather than a specific element. Therefore, the most likely L1 entity type is IfcBuildingElementProxy, which represents a building element that is not explicitly defined in the IFC model."
+  },
+  "e38a67c3940234d0be55bf70d3a6ceab": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcSlab",
+      "IfcBeam",
+      "IfcColumn"
+    ],
+    "measured_dimension": "road area percentage",
+    "why_required": "To ensure adequate space for roads and recreational purposes, as per local regulations.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause mentions 'space set apart for roads' and '10% area reserved for recreational purposes', which suggests a percentage value related to the area of a building element. Given the context, it's likely related to the area of walls or slabs, but not explicitly mentioned in the L2 property list. The threshold value of 10.0% suggests a percentage value, which is a common unit for area-related properties."
+  },
+  "aac0b4a9f5719c161cef8f5de65fd34e": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuildingElementProxy"
+    ],
+    "measured_dimension": "layout area percentage",
+    "why_required": "To ensure compliance with local regulations and allocate space for public purposes.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a percentage of layout area, which is not a physical property of a building element. However, it applies to the building as a whole, which can be represented by an IfcBuildingElementProxy. The threshold value exists to ensure compliance with local regulations and allocate space for public purposes."
+  },
+  "21bf4d4cd26e864167226b067073781c": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "layout area",
+    "why_required": "To ensure that a certain percentage of residential layouts are developed as Economically Weaker Sections (EWS) plots, promoting affordable housing and social equity.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause specifies a threshold for layout area, which is not directly related to any physical property of the known L2 product fields. However, it is likely related to the overall building or layout, which is represented by the IfcBuilding entity type. The measured dimension is layout area, and the threshold exists to ensure compliance with social equity and affordable housing regulations."
+  },
+  "d018b670649ac59e6867155f0169a783": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBuilding"
+    ],
+    "measured_dimension": "road width",
+    "why_required": "To regulate the amount of Floor Space Index (FSI) allowed in a building based on the road width, ensuring that the building does not exceed the permissible limits.",
+    "confidence": 0.8,
+    "reasoning": "The regulation clause is related to building planning and zoning, which is typically associated with the building entity rather than individual elements. The threshold value of 18.0 m is related to road width, which is a characteristic of the building site rather than an element property."
+  },
+  "101bf18af31cc63f2169d3a95949dc83": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "This threshold exists to ensure that buildings do not exceed a certain height, which is a safety requirement to prevent structural collapse and ensure accessibility.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates the height of Non High Rise buildings, which is a physical property that can be measured in meters. The L2 property Length_mm is the closest match from the known list, as it represents a physical dimension. The L1 entity types are selected based on their structural nature, as the clause is related to structural design. The measured dimension is clear height, as the clause specifies a height threshold. The reason for the threshold is to ensure safety and accessibility."
+  },
+  "fc79d00645044dd2f5d4d84f68cfe5d7": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure that buildings do not pose a risk to occupants and surrounding structures in case of collapse or structural failure.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates the height of buildings, which is a physical property. The L2 property 'Length_mm' is the most relevant property from the known list. The L1 entity types are those that can have a significant impact on the structural integrity of the building. The measured dimension is 'clear height' as it is the height from the ground to the top of the building. The threshold value exists to ensure safety and prevent damage to surrounding structures."
+  },
+  "5823bd8a7cd3a7deaadc8bf55805b648": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcColumn",
+      "IfcBeam",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure adequate drainage of the site and prevent water accumulation around the building, thereby maintaining structural integrity and preventing damage.",
+    "confidence": 0.9,
+    "reasoning": "The clause specifies a minimum height for the plinth to ensure drainage, which implies a clear height requirement for the building element. This requirement applies to walls, columns, beams, and footings, which are all structural elements that could affect drainage."
+  },
+  "9ec60b7dd9be507555d7f8054599f6a2": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure sufficient headroom for human habitation, preventing accidents and injuries.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates the height of rooms and spaces, which is a physical property not explicitly listed in the known L2 properties. However, it can be inferred to apply to structural elements like beams, columns, slabs, and walls, which are all part of the building's structure. The threshold value of 2.75m is likely required for safety reasons, to prevent accidents and injuries due to insufficient headroom."
+  },
+  "b1b2923c4a6e7f47619e0274fa710606": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure sufficient headroom for safe movement and accessibility in kitchens.",
+    "confidence": 0.9,
+    "reasoning": "The clause specifies a minimum height for kitchens, which is typically a characteristic of the ceiling or floor slab. Given the context, it's likely that the height is measured from the floor to the lowest point of the ceiling, which is a characteristic of IfcSlab and IfcWall. The measured dimension is clear height, as it's a physical property that affects the usability of the space. The threshold exists for safety and accessibility reasons."
+  },
+  "4e14c0d3fabd41eb85ce95158c5fdfde": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "to ensure adequate headroom for occupants and to prevent accidents",
+    "confidence": 0.9,
+    "reasoning": "The given threshold value of 2.1m is a common minimum height for bathroom and water closet ceilings. This is likely due to safety and accessibility concerns, as it allows occupants to stand upright comfortably. The property 'Height_m' is not directly listed, but it can be inferred from the given properties (e.g., Length_mm, Width_mm, Depth_mm). The L1 entity types 'IfcSlab' and 'IfcWall' are likely applicable, as they can represent bathroom and water closet ceilings."
+  },
+  "d370f7ed8ce03d16d918edeba1e7a7a8": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "This threshold exists to ensure adequate headroom for occupants and to prevent accidental injuries.",
+    "confidence": 0.9,
+    "reasoning": "The regulation clause specifies a minimum height for a mezzanine floor, which is a type of structural element. The threshold value of 2.2 m is likely related to the physical dimension of the element, specifically its height. The property Length_mm from the known list is the most relevant match, as it represents a physical dimension. The L1 entity types listed are structural elements that may have a height dimension. The measured dimension is clear height, as it refers to the minimum height required for a mezzanine floor. The reason for this threshold is to ensure safety and prevent accidental injuries."
+  },
+  "c19c5a778795ab8a1d3b80a221d8c41f": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall",
+      "IfcCovering",
+      "IfcOpeningElement"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure safe movement and accessibility within the storeroom, and to comply with building codes.",
+    "confidence": 0.9,
+    "reasoning": "The clause applies to storerooms, which are typically enclosed spaces with a ceiling (IfcSlab) and walls (IfcWall). Coverings (IfcCovering) and openings (IfcOpeningElement) also contribute to the overall height. The height is a critical dimension for accessibility and safety, and the threshold value of 2.2m is likely a minimum requirement to ensure that occupants can move comfortably within the space."
+  },
+  "927279a6ba17f9ca0ece94a337f66592": {
+    "l2_property": "Length_mm",
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "This threshold exists to ensure safe clearance for vehicles and pedestrians in garages.",
+    "confidence": 0.9,
+    "reasoning": "The clause regulates the height of a garage, which is a physical property. The L2 property Length_mm is the most relevant property from the known list. The clause applies to various structural elements like beams, columns, slabs, walls, and footings. The threshold value of 2.4 m is likely intended to ensure safe clearance for vehicles and pedestrians in garages, which is a common requirement in building codes."
+  },
+  "2165eb288e4e6e1e5f7c728f7e236616": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcBeam",
+      "IfcColumn",
+      "IfcSlab",
+      "IfcWall",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure sufficient headroom for safe movement and to prevent accidents.",
+    "confidence": 0.8,
+    "reasoning": "The clause specifies a minimum height requirement for basements, which is a common concern for building safety and accessibility. The threshold value of 2.4m is likely intended to ensure that occupants have sufficient headroom to move around safely. Although the exact property name 'Height_m' is not in the known list, it is a reasonable inference based on the context of the clause."
+  },
+  "815cf71652aab710c66b78a302c425bc": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure that chimneys are safely positioned above adjacent structures to prevent damage from water or debris.",
+    "confidence": 0.8,
+    "reasoning": "The clause specifies a minimum height for chimneys above flat roofs and sloping roofs, which suggests a concern for clear height. This is a common requirement in building codes to ensure structural integrity and safety. The specified height values (0.9m and 0.6m) are typical for such requirements."
+  },
+  "b1d2f72c8b04fd9f3770fa80b0977bf9": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcWall",
+      "IfcColumn",
+      "IfcBeam",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To prevent falls from roof terraces, balconies, and verandahs, ensuring user safety.",
+    "confidence": 0.9,
+    "reasoning": "The clause specifies a height range for parapet walls and handrails, which is a common requirement for building safety. The threshold value of 1.2m is likely related to the minimum height required to prevent falls. The L2 property 'Height_m' is a reasonable match, and the L1 entity types are likely to be affected by this regulation."
+  },
+  "e501a8949e6bad17c459b895c3b82d46": {
+    "l2_property": null,
+    "l1_entity_types": [
+      "IfcSlab",
+      "IfcWall",
+      "IfcBeam",
+      "IfcColumn",
+      "IfcFooting"
+    ],
+    "measured_dimension": "clear height",
+    "why_required": "To ensure safe and easy access for inspection and maintenance, preventing accidents and facilitating anti-malaria efforts.",
+    "confidence": 0.8,
+    "reasoning": "The clause applies to elements that can have a height, and the threshold value is related to the height of the water tank, which is likely to be a slab or wall element. The permanently fixed iron ladder requirement suggests that the element needs to be tall enough to require a ladder for inspection."
+  }
+}
